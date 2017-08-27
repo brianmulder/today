@@ -1,19 +1,19 @@
 PROGNAME = Today
 LOWER_PROGNAME = $(shell echo $(PROGNAME) | tr A-Z a-z)
 
-.PHONY: all test
+.PHONY: test
 
 all: build test clean
 
 build:
-				stack build
+	stack build
 
 test:
-				stack test
+	stack test
 
 clean:
-				stack clean
+	stack clean
 
 start:
-				stack exec $(LOWER_PROGNAME)-exe
+	stack exec $(LOWER_PROGNAME)-exe
 
