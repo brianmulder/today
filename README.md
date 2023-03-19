@@ -24,3 +24,4 @@ stack exec today-exec
 extra-deps:
 - rethinkdb-2.0.0.0
 ```
+
